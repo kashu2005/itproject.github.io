@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Student Management System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom CSS for equal card height */
+    
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand ml-2" href="#"><i class='fas fa-university' style='font-size:36px'></i>  <b>JECRC</b></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://jecrcfoundation.com/">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/dashbord.html"><i class='fas fa-user-circle'></i>  Dashboard</a></li>
+              <li><a class="dropdown-item" href="/attendance.html"><i class="fas fa-chart-bar"></i>  Attendance</a></li>
+              <li><a class="dropdown-item" href="https://drive.google.com/file/d/11rTSH2ByLw0Z8JF7KiXtykepeVvuMiQP/view?usp=sharing"><i class="far fa-calendar-alt"></i>  Timetable</a></li>
+              <li><a class="dropdown-item" href="/course.html"><i class="fa fa-file"></i>  Course</a></li>
+              
+              <li><hr class="dropdown-divider" /></li>
+              <!-- <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-success text-white" type="submit">Search</button> -->
+          <!-- <button class="btn btn-success mx-2">Login</button>  -->
+          <span class="nav-item dropdown mx-2 my-2 text-white">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Options
+            </a>
+            <ul class="dropdown-menu my-3">
+              <li>
+                <a class="dropdown-item" href="/index.html">Log-out</a>
+              </li>
+              <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Admin Login</a></li> -->
+            </ul>
+          </span>
+
+          <!-- <button class="btn btn-success mx-2">Sign_Up</button> -->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+    <h1 class="text-center mb-4">View Results</h1>
+    <div class="container mt-5">
+    <!-- Subject links -->
+    <div class="row">
+      <!-- DSA Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Microwave theory technique</h5>
+            <a href="microwave.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add similar cards for other subjects -->
+      
+      <!-- Digital Electronics Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Computer architecture</h5>
+            <a href="computer arch.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Software Engineering Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Digital signal processing</h5>
+            <a href="dsp.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Object Oriented Programming Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Electromagnetics waves</h5>
+            <a href="em.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Advance Engineering Mathematics Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Control systems</h5>
+            <a href="control system.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Managerial Economics and Financial Accounting Subject -->
+      <div class="col-md-4">
+        <div class="card subject-card">
+          <div class="card-body">
+            <h5 class="card-title">Satellite communication</h5>
+            <a href="satellite comm.html" class="btn btn-success">View Marks</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+
+  <footer class="py-1 mt-4 bg-primary">
+    <ul class="nav justify-content-center border-bottom pb-1 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+      <li class="nav-item"><a href="https://jecrcfoundation.com/" class="nav-link px-2 text-white">About</a></li>
+      <li class="nav-item"><a href="/alternate-cards.html" class="nav-link px-2 text-white">Developers</a></li>
+     </ul>
+    <p class="text-center text-white">© 2023 Company, Inc</p>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/e3c835e469.js" crossorigin="anonymous"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

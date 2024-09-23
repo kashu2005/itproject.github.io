@@ -1,0 +1,19 @@
+/* Add your custom styles here */
+body {
+    background-color: #f8f9fa;
+  }
+  
+.container {
+    max-width: 800px;
+  }
+  
+.card {
+    margin: 20px 20px;
+    
+  }
+  /* styles.css */
+#pieChart {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  

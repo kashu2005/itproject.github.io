@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin Panel - Upload Marks</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Admin Panel - Upload Marks</h1>
+
+    <!-- Upload Marks Form -->
+    <form id="uploadForm" class="animated fadeIn">
+      <!-- Data Structures and Algorithms (DSA) -->
+      <div class="form-group">
+        <label for="dsaMarks">EMFT MARKS</label>
+        <input type="text" class="form-control" id="dsaMarks" name="dsaMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Digital Electronics -->
+      <div class="form-group">
+        <label for="digitalElectronicsMarks">DSP Marks</label>
+        <input type="text" class="form-control" id="digitalElectronicsMarks" name="digitalElectronicsMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Software Engineering -->
+      <div class="form-group">
+        <label for="softwareEngineeringMarks">SC marks</label>
+        <input type="text" class="form-control" id="softwareEngineeringMarks" name="softwareEngineeringMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Object Oriented Programming (OOP) -->
+      <div class="form-group">
+        <label for="oopMarks">EW marks</label>
+        <input type="text" class="form-control" id="oopMarks" name="oopMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Advance Engineering Mathematics (AEM) -->
+      <div class="form-group">
+        <label for="aemMarks">CS marks</label>
+        <input type="text" class="form-control" id="aemMarks" name="aemMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Managerial Economics and Financial Accounting (MEFA) -->
+      <div class="form-group">
+        <label for="mefaMarks">MT marks</label>
+        <input type="text" class="form-control" id="mefaMarks" name="mefaMarks" placeholder="Enter marks">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" class="btn btn-primary" onclick="submitForm()">Upload Marks</button>
+    </form>
+
+    <!-- Success Message (Hidden by default) -->
+    <div id="successMessage" class="alert alert-success mt-4 animated fadeIn" style="display: none;">
+      Marks uploaded successfully!
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Custom JS for animation -->
+  <script>
+    function submitForm() {
+      // Simulate form submission (replace with actual logic)
+      // For demonstration purposes, let's show a success message after 2 seconds
+      setTimeout(function() {
+        // Hide the form
+        document.getElementById('uploadForm').style.display = 'none';
+        // Show the success message
+        document.getElementById('successMessage').style.display = 'block';
+      }, 2000);
+    }
+  </script>
+
+<script src="https://kit.fontawesome.com/e3c835e469.js" crossorigin="anonymous"></script>
+</body>
+</html>

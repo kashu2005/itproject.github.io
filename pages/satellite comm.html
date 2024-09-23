@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>DSA Marks</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Satellite communication</h1>
+
+    <!-- Analysis section -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Test Analysis</h5>
+        <div class="row">
+          <!-- Text on the left -->
+          <div class="col-md-6">
+            <ul>
+              <li>Total Questions: 20</li>
+              <li>Questions Attempted: 18</li>
+              <li>Correct Answers: 15</li>
+              <li>Incorrect Answers: 3</li>
+              <li>Marks: 45</li>
+              <li>Percentage: 75%</li>
+            </ul>
+          </div>
+          <!-- Pie chart on the right -->
+          <div class="col-md-6">
+            <canvas id="pieChart" width="200" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    // Chart.js
+    var ctx = document.getElementById('pieChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Correct Answers', 'Incorrect Answers', 'Not Attempted'],
+        datasets: [{
+          data: [15, 3, 2],
+          backgroundColor: ['#28a745', '#dc3545', '#8F00FF'],
+        }]
+      },
+    });
+  </script>
+
+<script src="https://kit.fontawesome.com/e3c835e469.js" crossorigin="anonymous"></script>
+</body>
+</html>

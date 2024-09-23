@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Alternating Layout</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS for styling -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .alternate-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+    .left-content,
+    .right-content {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      text-align: justify;
+    }
+    .left-photo,
+    .right-photo {
+      flex: 1;
+      max-width: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .left-photo img,
+    .right-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4"><b>Student Management System</b></h1>
+
+    <!-- Section 1: Photo on Left, Content on Right -->
+    <div class="alternate-section">
+      <div class="left-photo">
+        <img src="left-photo1.jpg" alt="Left Photo 1">
+      </div>
+      <div class="right-content">
+        <h2>Section 1 Title</h2>
+        <p>This is the content for section 1. You can add your text, images, or any other content here.</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Content on Left, Photo on Right -->
+    <div class="alternate-section">
+      <div class="left-content">
+        <h2>Section 2 Title</h2>
+        <p>This is the content for section 2. You can add your text, images, or any other content here.</p>
+      </div>
+      <div class="right-photo">
+        <img src="right-photo1.jpg" alt="Right Photo 1">
+      </div>
+    </div>
+
+    <!-- Section 3: Photo on Left, Content on Right (Repeat pattern) -->
+    <div class="alternate-section">
+      <div class="left-photo">
+        <img src="left-photo2.jpg" alt="Left Photo 2">
+      </div>
+      <div class="right-content">
+        <h2>Section 3 Title</h2>
+        <p>This is the content for section 3. You can add your text, images, or any other content here.</p>
+      </div>
+    </div>
+
+    <!-- Section 4: Content on Left, Photo on Right (Repeat pattern) -->
+    <div class="alternate-section">
+      <div class="left-content">
+        <h2>Section 4 Title</h2>
+        <p>This is the content for section 4. You can add your text, images, or any other content here.</p>
+      </div>
+      <div class="right-photo">
+        <img src="right-photo2.jpg" alt="Right Photo 2">
+      </div>
+    </div>
+
+    <!-- Continue the pattern as needed -->
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
